@@ -214,7 +214,7 @@ footer div {
   .body2::after{
     content: "";
     width: 100%;
-    height: 100%;
+    height: 800px;
     background: white;
     position: absolute;
     z-index: -1;
