@@ -341,7 +341,12 @@ if (screen && screen.width <= 770) {
     setInterval(slidingImages, 3000);
 
     imageShowContainer[0].addEventListener('transitionend', (event) => {
-        if (imageBox[counter].id === 'firstClone' && event.propertyName === "transform") {
+
+        if(counter > imageBox.length || counter < 0){
+            counter = 2;
+        }
+
+        if ((imageBox[counter].id === 'firstClone' && event.propertyName === "transform")) {
             imageShowContainer[0].style.transition = "none";
             counter = imageBox.length - 1 - counter;
             imageShowContainer[0].style.transform = "matrix(1, 0, 0, 1, " + (imageSize * counter - center) + ",0)";
