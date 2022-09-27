@@ -46,7 +46,7 @@ nav div {
   background: white;
   position: absolute;
   z-index: -1;
-  clip-path: circle(50.0% at 12% 50%);
+  clip-path: circle(50.0% at 14% 50%);
 }
 
 .body2{
@@ -63,7 +63,7 @@ nav div {
 
 .Hackathon{
   letter-spacing:6px;
-  margin-right: 45px;
+  /* margin-right: 45px; */
   width: 560px;
 }
 
@@ -88,7 +88,9 @@ nav div {
 
 .logoPannel p{
     padding-right: 10px;
+    /* margin-left: 20px; */
     border-right: 4px solid rgb(55, 85, 136);
+    
 }
 
   .logoPannel{
@@ -96,7 +98,7 @@ nav div {
     /* flex-direction: row; */
     /* justify-content: center; */
     /* align-content: stretch; */
-    column-gap: 60px;
+    column-gap: 150px;
     align-items: center;
     height: 100%;
     width:fit-content;

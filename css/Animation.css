@@ -10,7 +10,7 @@
 
 body{
     background-image: linear-gradient(var(--Bmid),var(--Bprimary),var(--Bdark),var(--Bdark),var(--BlightDark),var(--Bprimary), var(--Bsecondary));;
-    /* overflow-x: hidden; */
+    user-select: none; 
 }
 
 .overFlow{
