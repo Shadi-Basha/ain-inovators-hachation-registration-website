@@ -9,14 +9,14 @@
 
     --Hprimary: #0A1B2D;
     --Hsecondary: #5EC3A5;
-    --standerd: rgb(230, 230, 230);
-    --third: #c6c013;
-    --forth: #ef8a17;
+    --standerd: #e6e6e6;
+    --third: #575757;
+    --forth: #7c7c7c;
 
 }
 
 body{
-    background-image: linear-gradient(var(--standerd),var(--standerd),var(--forth),var(--forth),var(--third), var(--standerd));
+    background-image: linear-gradient(var(--standerd),var(--standerd),var(--third),var(--third),var(--third),var(--forth), var(--standerd));
     user-select: none; 
 }
 
@@ -36,7 +36,7 @@ body{
 .getReady{
     font-size: 150px;
     margin-top: 30px;
-    color: white;
+    color: black;
 }
 
 .zeroOpacity{
