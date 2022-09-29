@@ -1,15 +1,22 @@
 
 :root {
-    --Bprimary: #2c8d8d;
-    --Bmid:#009495;
-    --Bsecondary: #02e9bd;
-    --Bdark: #144747;
-    --BlightDark:#3c7272;
-    --Blight: #F3F3F3;
+    --Bprimary: gray;
+    --Bmid:gray;
+    --Bsecondary: #C6C013;
+    --Bdark: gray;
+    --BlightDark:#808080;
+    --Blight: #EF8A17;
+
+    --Hprimary: #0A1B2D;
+    --Hsecondary: #5EC3A5;
+    --standerd: rgb(230, 230, 230);
+    --third: #c6c013;
+    --forth: #ef8a17;
+
 }
 
 body{
-    background-image: linear-gradient(var(--Bmid),var(--Bprimary),var(--Bdark),var(--Bdark),var(--BlightDark),var(--Bprimary), var(--Bsecondary));;
+    background-image: linear-gradient(var(--standerd),var(--standerd),var(--forth),var(--forth),var(--third), var(--standerd));
     user-select: none; 
 }
 

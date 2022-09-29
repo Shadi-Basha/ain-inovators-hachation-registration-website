@@ -21,7 +21,7 @@ nav div .logo{
   height: 30px;
 }
 nav {
-  background-color: lightcyan;
+  background-color: #5ec3a59c;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr; 
@@ -64,13 +64,13 @@ nav div {
 .Hackathon{
   letter-spacing:6px;
   /* margin-right: 45px; */
-  width: 560px;
+  width: 560px; 
 }
 
 .logoPannel .text{
     flex-grow: 4;
     /* margin-right: end; */
-    width: 600px;
+    width: 560px;
     color: #0a1b2d;
     position: static;
     margin-left: 70px;
@@ -89,7 +89,7 @@ nav div {
 .logoPannel p{
     padding-right: 10px;
     /* margin-left: 20px; */
-    border-right: 4px solid rgb(55, 85, 136);
+    border-right: 4px solid #0a1b2d;
     
 }
 
@@ -110,7 +110,8 @@ nav div {
   }
 
   .infoTextBox{
-    margin-right: 60px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 
  
@@ -181,7 +182,7 @@ footer div {
 
   .Hackathon{
     letter-spacing:6px;
-    margin-right: 45px;
+    /* margin-right: 45px; */
     width: 450px;
   }
   
@@ -194,7 +195,7 @@ footer div {
 
   .Hackathon{
     letter-spacing:6px;
-    margin-right: 20px;
+    /* margin-left: 10px; */
     width: 450px;
   }
 
@@ -209,7 +210,7 @@ footer div {
   .Hackathon{
     letter-spacing:6px;
     margin-right: 0;
-    width: 360px;
+    width: 350px;
   }
 
 

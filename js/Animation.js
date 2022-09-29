@@ -181,8 +181,8 @@ window.onscroll = (event) => {
 
 
 let releaseYear = 2022;
-let releaseDay = 23;
-let releaseMonth = "sep";
+let releaseDay = 10;
+let releaseMonth = "oct";
 let releaseHours = "00:";
 let releaseMinutes = "00:";
 let releaseSeconds = "00";
@@ -201,7 +201,6 @@ const countDownDateChallenge11 = new Date(releaseMonth + " " +(releaseDay+5) + "
 const countDownDateChallenge12 = new Date(releaseMonth + " " +(releaseDay+5) + ", " + releaseYear + " " + releaseHours + releaseMinutes + releaseSeconds).getTime();
 const countDownDateChallenge13 = new Date(releaseMonth + " " +(releaseDay+6) + ", " + releaseYear + " " + releaseHours + releaseMinutes + releaseSeconds).getTime();
 const countDownDateChallenge14 = new Date(releaseMonth + " " +(releaseDay+6) + ", " + releaseYear + " " + releaseHours + releaseMinutes + releaseSeconds).getTime();
-const countDownDateChallenge15 = new Date(releaseMonth + " " +(releaseDay+7) + ", " + releaseYear + " " + releaseHours + releaseMinutes + releaseSeconds).getTime();
 
 
 
@@ -261,7 +260,6 @@ setInterval(timeFormating, 1000, countDownDateChallenge11, "challenge11Timer", 1
 setInterval(timeFormating, 1000, countDownDateChallenge12, "challenge12Timer", 11);
 setInterval(timeFormating, 1000, countDownDateChallenge13, "challenge13Timer", 12);
 setInterval(timeFormating, 1000, countDownDateChallenge14, "challenge14Timer", 13);
-setInterval(timeFormating, 1000, countDownDateChallenge15, "challenge15Timer", 14);
 
 
 
@@ -274,7 +272,7 @@ setInterval(timeFormating, 1000, countDownDateChallenge15, "challenge15Timer", 1
 // });
 
 // Set the date we're counting down to
-const countDownDate = new Date("oct 10, 2022 00:00:00").getTime();
+const countDownDate = new Date("oct 24, 2022 00:00:00").getTime();
 
 // Update the count down every 1 second
 let x = setInterval(function () {
@@ -284,6 +282,7 @@ let x = setInterval(function () {
 
     // Find the distance between now and the count down date
     let distance = countDownDate - now;
+    let demo = document.getElementById("demo");
 
     // Time calculations for days, hours, minutes and seconds
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -292,13 +291,23 @@ let x = setInterval(function () {
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = "  " + "    " + days + "d  " + hours + "h  "
-        + minutes + "m  " + seconds + "s  " + "    " + "    ";
+    let RcountDown;
+
+    if (days > 0)
+        RcountDown = days + "d  " + hours + "h";
+    else if (hours > 0)
+        RcountDown = hours + "h  " + minutes + "m";
+    else if (minutes > 0)
+        RcountDown = minutes + "m  " + seconds + "s";
+    else
+        RcountDown = seconds + "s";
 
     // If the count down is finished, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "انتهى التسجل";
+        demo.innerHTML = "انتهى التسجل";
+    }else{
+        demo.innerHTML = RcountDown;
     }
 }, 1000);
 
