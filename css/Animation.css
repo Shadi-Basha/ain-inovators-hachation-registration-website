@@ -10,13 +10,14 @@
     --Hprimary: #0A1B2D;
     --Hsecondary: #5EC3A5;
     --standerd: #e6e6e6;
-    --third: #575757;
-    --forth: #7c7c7c;
+    --third: #757575;
+    --forth: #666666;
+    --fifth: #575757;
 
 }
 
 body{
-    background-image: linear-gradient(var(--standerd),var(--standerd),var(--third),var(--third),var(--third),var(--forth), var(--standerd));
+    background-image: linear-gradient(var(--standerd),var(--standerd),var(--third),var(--forth),var(--forth),var(--fifth), var(--fifth));
     user-select: none; 
 }
 
@@ -36,7 +37,7 @@ body{
 .getReady{
     font-size: 150px;
     margin-top: 30px;
-    color: black;
+    color: var(--Hprimary);
 }
 
 .zeroOpacity{
@@ -45,7 +46,7 @@ body{
 
 .underText{
     z-index: 0;
-    color: white;
+    color: var(--Hprimary);
     opacity: 0;
     transition-property: opacity;
     transition-duration: 0.5s;
@@ -115,7 +116,7 @@ body{
 
 .readyARText{
     opacity: 0;
-    color: white;
+    color: var(--Hprimary);
     font-size: 70px;
 }
 
@@ -203,7 +204,7 @@ body{
 
     .readyARText{
         opacity: 0;
-        color: white;
+        color: var(--Hprimary);
         font-size: 50px;
     }
     
@@ -270,7 +271,7 @@ body{
 
     .mobileTextSize{
         font-size: 90px;
-        color: white;
+        color: var(--Hprimary);
         opacity: 0;
     }
 
@@ -307,7 +308,7 @@ body{
 
     .readyARText{
         opacity: 0;
-        color: white;
+        color: var(--Hprimary);
         font-size: 50px;
     }
     
