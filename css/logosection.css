@@ -142,7 +142,7 @@ footer div {
   }
 
   .body2::after{
-    clip-path: circle(50.0% at 80px 50%);
+    clip-path: circle(50.0% at 13% 50%);
   }
 
   .logoImg{
