@@ -142,7 +142,7 @@ footer div {
   }
 
   .body2::after{
-    clip-path: circle(50.0% at 13% 50%);
+    clip-path: circle(50.0% at 10% 50%);
   }
 
   .logoImg{
@@ -155,7 +155,7 @@ footer div {
   }
 
   .logoPannel{
-      column-gap: 100px;
+      /* column-gap: 100px; */
   }
 
   .logoPannel .logo {
