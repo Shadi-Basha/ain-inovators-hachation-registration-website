@@ -20,7 +20,7 @@ window.onscroll = (event) => {
     let logoSection = 635;
     let newScroll = scroll - logoSection;
     let mobileScroll = scroll - logoSectionMobile;
-    console.log("Y : " + mobileScroll);
+    console.log("Y : " + scroll);
     // console.log("width: " + width);
     const body = document.getElementsByTagName('body')[0];
     if (screen.width > 770) {
@@ -369,5 +369,30 @@ if (screen && screen.width <= 770) {
         }
     })
 
+}
+
+const goDown = () =>{
+    let x;
+    if(window.innerWidth > 1200){
+        x = 2860;
+    }else if(window.innerWidth < 1200 && window.innerWidth > 770){
+        x =  2350;
+    }else{
+        x = 1836;
+    }
+
+    window.scrollTo({
+        top: x,
+        left: 0,
+        behavior: 'smooth' 
+      });
+}
+
+const goTop = () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth' 
+      });
 }
 
