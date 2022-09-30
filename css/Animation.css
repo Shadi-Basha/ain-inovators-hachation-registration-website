@@ -10,7 +10,7 @@
     --Hprimary: #0A1B2D;
     --Hsecondary: #5EC3A5;
     --standerd: #e6e6e6;
-    --third: #757575;
+    --third: #9c9c9c;
     --forth: #666666;
     --fifth: #575757;
 
@@ -48,6 +48,7 @@ body{
     z-index: 0;
     color: var(--Hprimary);
     opacity: 0;
+    margin-top: 8px;
     transition-property: opacity;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
