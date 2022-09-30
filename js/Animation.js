@@ -182,7 +182,7 @@ window.onscroll = (event) => {
 
 let releaseYear = 2022;
 let releaseDay = 10;
-let releaseMonth = "oct";
+let releaseMonth = "sep";
 let releaseHours = "00:";
 let releaseMinutes = "00:";
 let releaseSeconds = "00";

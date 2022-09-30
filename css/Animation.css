@@ -17,7 +17,7 @@
 }
 
 body{
-    background-image: linear-gradient(var(--standerd),var(--standerd),var(--third),var(--forth),var(--forth),var(--fifth), var(--fifth));
+    background-image: linear-gradient(var(--standerd),var(--standerd),var(--third),var(--forth),var(--forth),var(--fifth), var(--standerd));
     user-select: none; 
 }
 
